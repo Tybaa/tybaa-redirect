@@ -3,9 +3,6 @@
 # Serve ads.txt without redirecting (200! forces serving, not redirecting)
 /ads.txt    /ads.txt    200!
 
-# Optional: Also serve robots.txt without redirecting
-/robots.txt /robots.txt 200!
-
 # Redirect EVERYTHING else to www.tybaa.com
 # :splat preserves the path after the domain
 /*          https://www.tybaa.com/:splat    301!
